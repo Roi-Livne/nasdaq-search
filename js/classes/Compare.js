@@ -29,7 +29,7 @@ class Compare {
         this.companyList.push(company.symbol);
 
         this.btn.innerHTML = `Compare ${this.count} Companies`
-        this.btn.href = `../compare.html?symbols=${this.companyList.toString()}`;
+        this.btn.href = `../nasdaq-search/compare.html?symbols=${this.companyList.toString()}`;
         if (this.btn.disabled) {
             this.btn.disabled = false;
             this.btn.classList.remove('disabled')
@@ -72,7 +72,7 @@ class Compare {
         this.count--;
         if (this.count > 0) {
             this.btn.innerHTML = `Compare ${this.count} Companies`
-            this.btn.href = `../compare.html?symbols=${this.companyList.toString()}`;
+            this.btn.href = `../nasdaq-search/compare.html?symbols=${this.companyList.toString()}`;
         } else {
             this.btn.innerHTML = `Compare`
             this.btn.disabled = true;

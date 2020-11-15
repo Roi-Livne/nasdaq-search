@@ -60,7 +60,7 @@ class Results {
 
             perc.classList.add('perc');
             this.decideIncOrDec(listItem, perc);
-            link.href = `../company.html?symbol=${listItem.symbol}`;
+            link.href = `../nasdaq-search/company.html?symbol=${listItem.symbol}`;
             link.appendChild(text);
             item.appendChild(link);
             item.classList.add('result');

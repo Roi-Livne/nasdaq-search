@@ -19,7 +19,7 @@ class Marquee {
             let link = document.createElement("a");
 
             link.innerHTML = `${listItem.symbol} <span class = "price">$${listItem.price}</span>`;
-            link.href = `../company.html?symbol=${listItem.symbol}`;
+            link.href = `../nasdaq-search/company.html?symbol=${listItem.symbol}`;
             item.appendChild(link);
             this.ul.appendChild(item)
         })
