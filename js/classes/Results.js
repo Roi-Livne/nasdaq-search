@@ -51,7 +51,7 @@ class Results {
             link.appendChild(compImg);
 
             function removeImg() {
-                compImg.src = '../img/defaultImg.jpg'
+                compImg.src = '../nasdaq-search/img/defaultImg.jpg'
             }
             text.innerHTML = `${listItem.companyName} (${listItem.symbol})`;
             text.innerHTML = this.highlightText(searchInput, text.innerHTML.toString());

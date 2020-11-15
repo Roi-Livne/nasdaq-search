@@ -46,7 +46,7 @@ class CompanyInfo {
         this.companyRefs.header.img.src = company.image;
         this.companyRefs.header.img.onerror = removeImg;
         function removeImg() {
-            this.companyRefs.header.img.src = '../../img/defaultImg.jpg'
+            this.companyRefs.header.img.src = '../../nasdaq-search/img/defaultImg.jpg'
         }
 
         if (company.ceo !== "None") this.companyRefs.info.ceo.innerHTML = company.ceo;
