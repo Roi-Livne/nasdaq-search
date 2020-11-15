@@ -3,6 +3,7 @@
     -webkit-transform: translateX(10%);
     transform: translateX(10%);
   }
+
   100% {
     -webkit-transform: translateX(-100%);
     transform: translateX(-1310%);
@@ -14,6 +15,7 @@
     -webkit-transform: translateX(10%);
     transform: translateX(10%);
   }
+
   100% {
     -webkit-transform: translateX(-100%);
     transform: translateX(-1310%);
@@ -24,7 +26,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -132,14 +134,14 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0.5rem 1rem;
 }
 
@@ -149,8 +151,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 
 .compare__list .company {
@@ -159,10 +161,10 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   padding: 0.5rem;
   margin: 0.5rem;
@@ -232,19 +234,19 @@ body {
   position: absolute;
   width: 100%;
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
   -webkit-animation: scroll-left 600s linear infinite;
-          animation: scroll-left 600s linear infinite;
+  animation: scroll-left 600s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none;
   height: 3rem;
 }
@@ -282,7 +284,7 @@ body {
   margin-top: 2rem;
   list-style-type: none;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
 }
 
@@ -292,14 +294,14 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 1rem;
   border-bottom: 1px solid #000;
   padding: 1.5rem 0 1.5rem 1.5rem;
@@ -307,7 +309,7 @@ body {
 
 .result:hover {
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   background-color: #f3f3f3;
 }
 
@@ -316,8 +318,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .result a img {
@@ -356,7 +358,7 @@ body {
 .company {
   position: relative;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
   padding: 1rem;
   border-radius: 2px;
 }
@@ -387,7 +389,7 @@ body {
   max-width: 12.8rem;
   max-height: 12.8rem;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
 }
 
 .company--ceo {
@@ -417,7 +419,7 @@ body {
   display: inline-block;
 }
 
-.company__metrics > p {
+.company__metrics>p {
   display: inline-block;
   margin-right: 0.5rem;
 }
@@ -440,8 +442,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 
 .compare-list .company {
