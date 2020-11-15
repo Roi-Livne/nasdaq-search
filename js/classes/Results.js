@@ -28,7 +28,6 @@ class Results {
         this.companiesList = list;
         let currentList = this.ul.querySelectorAll('*');
         currentList.forEach(item => item.remove());
-        console.log(list);
         list.map((listItem) => {
             let item = document.createElement("li");
             let link = document.createElement("a");
@@ -43,7 +42,6 @@ class Results {
             compareBtn.value = listItem.symbol;
             compareBtn.addEventListener("click", (event) => {
                 this.showCompany((event.target.value))
-                console.log(event.target);
                 event.target.disabled = true;
             });
 
@@ -89,7 +87,6 @@ class Results {
                 break;
             }
         }
-        console.log(company);
         this.addToCompareList(company)
     }
 
@@ -98,11 +95,9 @@ class Results {
     }
 
     updateCompareButtons() {
-        console.log(this.companyCompareList);
         if (this.companyCompareList) {
             let compButtonsList = this.ul.querySelectorAll("button");
             let compareListString = this.companyCompareList.toString();
-            console.log(compButtonsList)
             for (let i = 0; i < compButtonsList.length; i++) {
                 if (!compareListString.includes(compButtonsList[i].value)) compButtonsList[i].disabled = false;
                 else compButtonsList[i].disabled = true;

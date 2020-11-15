@@ -30,7 +30,6 @@ class Marquee {
             let res = await fetch(this.url);
             if (!res.ok) throw new Error(res);
             let data = await res.json();
-            console.log(data)
             this.createContent(data);
         } catch (error) {
             console.log(error);

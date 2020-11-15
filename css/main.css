@@ -362,6 +362,7 @@ body {
 }
 
 .company .header {
+  position: relative;
   display: inline-block;
   max-width: 60rem;
   border-bottom: 1px solid #000;
@@ -378,10 +379,13 @@ body {
 }
 
 .company--image {
-  display: inline-block;
+  position: absolute;
+  display: inline;
   margin: auto;
   top: 1rem;
   right: 1rem;
+  max-width: 12.8rem;
+  max-height: 12.8rem;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
 }
@@ -420,7 +424,7 @@ body {
 
 .company__chart {
   position: relative;
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -434,13 +438,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .compare-list .company {
   min-width: 40rem;
+  max-width: 78rem;
   margin: 1rem;
 }

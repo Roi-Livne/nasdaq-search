@@ -44,7 +44,6 @@ class Searchbar {
 
         const QUERYSTRING = new URLSearchParams(window.location.search);
         const QUERY = QUERYSTRING.get('query');
-        console.log(QUERY);
         if (QUERY) {
             bar.value = QUERY;
             this.searchInput = QUERY.toString();
@@ -59,7 +58,6 @@ class Searchbar {
             let res = await fetch(url);
             if (!res.ok) throw (res);
             let data = await res.json();
-            console.log(data);
             this.fetchAllProfs(data)
         } catch (error) {
             console.log(error);
@@ -75,7 +73,6 @@ class Searchbar {
             if (!res.ok) throw (res);
             let data = await res.json();
             this.list = data;
-            console.log(this.list);
             this.load(this.list, this.searchInput);
         } catch (error) {
             console.log(error);
@@ -114,6 +111,5 @@ class Searchbar {
         this.makeLoader();
         this.makeButton();
         this.makeBar();
-
     }
 }

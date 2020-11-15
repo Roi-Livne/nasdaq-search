@@ -25,7 +25,6 @@ class CompanyInfo {
             let res = await fetch(COMPANY_URL);
             if (!res.ok) throw new Error(res);
             let data = await res.json();
-            console.log(data[0])
             this.companyInfo = data[0];
             this.handleInfo(this.companyInfo);
         } catch (error) {
@@ -42,7 +41,6 @@ class CompanyInfo {
     }
 
     displayCompany(company) {
-        console.log(company)
         this.companyRefs.header.companyName.innerHTML = company.companyName;
         this.companyRefs.header.companySymbol.innerHTML = ` (${company.symbol})`;
         this.companyRefs.header.img.src = company.image;
@@ -128,7 +126,6 @@ class CompanyInfo {
             let res = await fetch(url);
             if (!res.ok) throw new Error(res);
             let data = await res.json();
-            console.log(data)
             this.chartData = data.historical;
             this.chartData = this.chartData.slice().reverse()
             this.fillChart(this.chartData);
@@ -141,7 +138,6 @@ class CompanyInfo {
     }
 
     fillChart(arr) {
-        console.log(arr)
         let selectChildrenArr = this.companyRefs.chart.filter.childNodes;
         let selectedFilter;
         for (let i = 0; i < selectChildrenArr.length; i++) {
@@ -150,7 +146,6 @@ class CompanyInfo {
                 break;
             }
         }
-        console.log(selectedFilter);
         let i;
         switch (selectedFilter.value) {
             case ('Week'):
@@ -276,8 +271,8 @@ class CompanyInfo {
 
         header.appendChild(h1);
         header.appendChild(sp);
-        header.appendChild(img);
         this.ref.appendChild(header);
+        this.ref.appendChild(img);
 
         this.companyRefs.header = {};
         this.companyRefs.header.img = img;
@@ -424,8 +419,6 @@ class CompanyInfo {
         this.ref.appendChild(wrapper);
 
         this.companyRefs.showDescBtn = showBtn;
-        console.log(this.companyRefs.showDescBtn)
-
         this.companyRefs.desc = {};
         this.companyRefs.desc.wrapper = wrapper;
         this.companyRefs.desc.sector = sector;
@@ -434,7 +427,6 @@ class CompanyInfo {
     }
 
     showOrHideDesc() {
-        console.log(this)
         if (this.companyRefs.showDescBtn.innerHTML === "Show More") this.companyRefs.showDescBtn.innerHTML = "Show Less";
         else this.companyRefs.showDescBtn.innerHTML = "Show More";
 

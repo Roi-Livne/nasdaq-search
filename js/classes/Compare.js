@@ -1,7 +1,6 @@
 class Compare {
     constructor(element) {
         this.ref = element;
-
         this.count = 0;
         this.companyList = [];
         this.createLayout();
