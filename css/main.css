@@ -38,9 +38,7 @@ body {
 }
 
 .body-wrapper {
-  width: 80%;
-  max-height: 100vh;
-  margin: 5rem auto;
+  margin: 3rem;
 }
 
 body {
@@ -276,12 +274,18 @@ body {
 .searchbar__search-btn {
   width: 6rem;
   height: 100%;
+  border: none;
+  border-radius: 2px;
+  background-color: #c6e6f8;
+}
+
+.results {
+  margin: 2rem 3rem;
 }
 
 .results__list {
   display: inline-block;
   width: 56.5rem;
-  margin-top: 2rem;
   list-style-type: none;
   -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
@@ -345,6 +349,19 @@ body {
 .result .info button {
   padding: 0.5rem;
   margin: 0 1rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  background-color: #c6e6f8;
+}
+
+.result .info button:disabled {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.index__header {
+  padding: 3rem;
 }
 
 .index h1 {
@@ -353,6 +370,15 @@ body {
 
 .index h2 {
   margin-bottom: 2.5rem;
+}
+
+.header-bg {
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(198, 230, 248, 0.8)), to(rgba(122, 197, 239, 0.8))), url(../../img/trading-12-1.jpg);
+  background-image: linear-gradient(to right bottom, rgba(198, 230, 248, 0.8), rgba(122, 197, 239, 0.8)), url(../../img/trading-12-1.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
 
 .company {
@@ -434,6 +460,14 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+.single-company {
+  padding: 3rem;
+}
+
+.single-company .company__chart {
+  width: 50%;
 }
 
 .compare-list {
